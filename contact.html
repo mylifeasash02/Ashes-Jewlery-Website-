@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Ashes/Contact</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="contact-page">
+    <!-- Navbar -->
+    <section id="header">
+        <a href="#" id="logo"><img src="The_ashes-removebg-preview.ico" alt=""></a>
+        <div id="desktop-menu">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="FAQS.html" >FAQS</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li id="bag"><a href="cart.html"><img src="shopping-cart.png" alt=""></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+            <div id="cart-icon">
+            </div>
+        </div>
+        <div id="mobile">
+            <div id="mobile-cart-icon">
+                <a href="cart.html"><img src="shopping-cart.png" alt=""></a>
+            </div>
+            <div id="mobile-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p>Have a specific question or request? Feel free to use the contact form below. Simply provide your full name, email address, and type your message. We're eager to hear from you and will respond as quickly as possible.
+
+            Thank you for choosing <span class="Ashes-bold">Ashes</span>. We appreciate your interest and look forward to assisting you with any information or support you may need. Your satisfaction is our priority!</p>
+        </div>
+        <div class="container-contact">
+          <div class="contact-info">
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="text">
+                <h3 class="contact-h3">Address</h3>
+                <p>University Street,Sakarya, Turkey</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="text">
+                <h3 class="contact-h3">Phone</h3>
+                <p>+ 53 164 913 99</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="text">
+                <h3 class="contact-h3">Email</h3>
+                <p>stylewithashes@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="contact-form">
+            <form onsubmit="event.preventDefault(); validateForm();" action="send">
+              <h2>Send Your Query</h2>
+              <div id="name" class="input-box">
+                <input type="text" id="fullName" required="required">
+                <small class="error"></small>
+                <span>Full Name</span>
+              </div>
+              <div id="email" class="input-box">
+                <input type="text" id="emailAddress" required="required">
+                <small class="error"></small>
+                <span>Email</span>
+              </div>
+              <div id="msg" class="input-box">
+                <textarea id="message" name="required"></textarea>
+                <small class="error"></small>
+                <span>Type your message here</span>
+              </div>
+              <div class="input-box">
+                <input type="submit" value="Send">
+                <p id="success"></p>
+              </div>
+            </form>
+          </div>
+          
+    </section>
+
+
+    <!-- footer -->
+    <footer
+            class="text-center text-lg-start text-dark"
+            style="background-color: #ECEFF1"
+            >
+      
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #535554"
+               >
+    
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+    
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+       
+      </section>
+      
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+        
+          <div class="row mt-3">
+           
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              
+              <h6 class="text-uppercase fw-bold">Ashes</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                Explore timeless elegance and elevate your style with our exquisite collection of fine jewelry. From intricately crafted pieces to contemporary designs, our jewelry reflects sophistication and refinement.
+              </p>
+            </div>
+        
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Men's Chain Collection</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Lockets and Pendant</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Silver and Gold Rings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Unisex Watches</a>
+              </p>
+            </div>
+            
+  
+           
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> University Street, Turkey</p>
+              <p><i class="fas fa-envelope mr-3"></i> stylewithashes@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 53 164 913 99</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+         
+          </div>
+         
+        </div>
+      </section>
+      
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"
+           >Ashes.com</a
+          >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Ashes/Shop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+<!-- Navbar -->
+<section id="header">
+    <a href="#" id="logo"><img src="The_ashes-removebg-preview.ico" alt=""></a>
+    <div id="desktop-menu">
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="FAQS.html" >FAQS</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="bag"><a href="cart.html"><img src="shopping-cart.png" alt=""></a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+        <div id="cart-icon">
+        </div>
+    </div>
+    <div id="mobile">
+        <div id="mobile-cart-icon">
+            <a href="cart.html"><img src="shopping-cart.png" alt=""></a>
+        </div>
+        <div id="mobile-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</section>
+
+<div id="announcementModal" class="modal">
+  <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <p>Hurry Up!!!!  New Year Sale is On...</p>
+  </div>
+</div>
+
+
+<section id="Shop">
+  <div class="shop-header">
+    <h2>Explore Our Collection</h2>
+    <p>Discover a variety of stylish and high-quality products</p>
+  </div>
+  <div class="grid-container">
+    
+  <article id="items" class="item-1">
+    <img class="shop-img" src="item1.jpg" alt="Product 1">
+    <h2 class="shop-h2">Silver Wings Locket</h2>
+    <p class="price">$99.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-2">
+    <img class="shop-img" src="item2.jpg" alt="Product 2">
+    <h2 class="shop-h2">Silver Bold Bracelet</h2>
+    <p class="price">$149.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-3">
+    <img class="shop-img" src="item3.jpg" alt="Product 3">
+    <h2 class="shop-h2">Double Black Chain</h2>
+    <p class="price">$119.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-4">
+    <img class="shop-img" src="item4.jpg" alt="Product 4">
+    <h2 class="shop-h2">Silver Feather Ring</h2>
+    <p class="price">$49.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-5">
+    <img class="shop-img" src="item5.jpg" alt="Product 5">
+    <h2 class="shop-h2">Beaded Chain with silver locket</h2>
+    <p class="price">$149.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-6">
+    <img class="shop-img" src="item6.jpg" alt="Product 6">
+    <h2 class="shop-h2">Silver Double Chain</h2>
+    <p class="price">$89.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-7" >
+    <img class="shop-img" src="item7.jpg" alt="Product 7">
+    <h2 class="shop-h2">Black Arrow Locket</h2>
+    <p class="price">$129.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-8">
+    <img class="shop-img" src="item8.jpg" alt="Product 8">
+    <h2 class="shop-h2">Bronze Locket Chain</h2>
+    <p class="price">$169.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-9">
+    <img class="shop-img" src="item9.jpg" alt="Product 9">
+    <h2 class="shop-h2">3 Silver Ring Set Collection</h2>
+    <p class="price">$99.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+
+  <article id="items" class="item-10">
+    <img class="shop-img" src="item10.jpg" alt="Product 10">
+    <h2 class="shop-h2">Full Ring And Chain Set</h2>
+    <p class="price">$249.99</p>
+    <button class="shop-btn">Add to Cart</button>
+  </article>
+</div>
+</section>
+
+
+
+<section id="pagination">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+</section>
+
+
+
+    <!-- footer -->
+    <footer
+            class="text-center text-lg-start text-dark"
+            style="background-color: #ECEFF1"
+            >
+      
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #535554"
+               >
+    
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+    
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+       
+      </section>
+      
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+        
+          <div class="row mt-3">
+           
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              
+              <h6 class="text-uppercase fw-bold">Ashes</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                Explore timeless elegance and elevate your style with our exquisite collection of fine jewelry. From intricately crafted pieces to contemporary designs, our jewelry reflects sophistication and refinement.
+              </p>
+            </div>
+        
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Men's Chain Collection</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Lockets and Pendant</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Silver and Gold Rings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Unisex Watches</a>
+              </p>
+            </div>
+            
+  
+           
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> University Street, Turkey</p>
+              <p><i class="fas fa-envelope mr-3"></i> stylewithashes@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 53 164 913 99</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+         
+          </div>
+         
+        </div>
+      </section>
+      
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"
+           >Ashes.com</a
+          >
+      </div>
+    </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>

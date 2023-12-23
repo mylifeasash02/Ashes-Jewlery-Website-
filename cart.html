@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Ashes/Cart</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body class="cart-page">
+    <!-- Navbar -->
+    <section id="header">
+        <a href="#" id="logo"><img src="The_ashes-removebg-preview.ico" alt=""></a>
+        <div id="desktop-menu">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="FAQS.html" >FAQS</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="bag"><a class="active" href="cart.html"><img src="shopping-cart.png" alt=""></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+            <div id="cart-icon">
+            </div>
+        </div>
+        <div id="mobile">
+            <div id="mobile-cart-icon">
+                <a href="cart.html"><img src="shopping-cart.png" alt=""></a>
+            </div>
+            <div id="mobile-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items-container" class="cart-items-container"></div>
+      </section>
+
+    <section id="cart-add">
+        <div id="coupon">
+            <h3 class="cart-h3">Apply Coupon</h3>
+        <div>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button id="apply-coupon-btn">Apply</button>
+    </div>
+</div>
+<div id="subtotal">
+    <h3 class="cart-h3">Cart Total</h3>
+    <table>
+        <tr>
+            <td>Cart SubTotal</td>
+            <td id="cart-subtotal">0.00$</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td id="shipping">Free</td>
+        </tr>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td id="total">0.00$</td>
+        </tr>
+    </table>
+</div>
+
+    </section>
+    <div class="order-information">
+        <h2 class="section-title mb-4">Order Information</h2>
+    
+        <div class="order-form-container">
+            <form id="orderForm">
+    
+                <div class="form-group mb-3">
+                    <label for="fullName" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+    
+                <div class="form-group mb-3">
+                    <label for="address" class="form-label">Address:</label>
+                    <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                </div>
+    
+                <div class="form-group mb-3">
+                    <label for="contact" class="form-label">Contact Number:</label>
+                    <input type="tel" class="form-control" id="contact" name="contact" required>
+                </div>
+    
+                <button type="button" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+    
+            </form>
+        </div>
+    </div>
+
+
+    <section id="survey" class="sat-survey">
+        <h2>User Satisfaction Survey</h2>
+        <form id="surveyForm">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+            <button type="button" onclick="submitSurvey()">Submit Survey</button>
+        </form>
+    
+    
+    <section class="competition">
+        <h2>Competition Questions</h2>
+        <form id="competitionForm">
+            <label for="answer1">Question 1: What is the name of the founder of Ashes?</label>
+            <input type="text" id="answer1" name="answer1">
+
+            <label for="answer2">Question 2: When was Ashes launched?</label>
+            <input type="text" id="answer2" name="answer2">
+    
+            <button type="button" onclick="submitCompetition()">Submit Answers</button>
+        </form>
+    </section>
+    
+    <section class="feedback">
+        <h2>Feedback</h2>
+        <form id="feedbackMessage">
+        <input type="text" id="feedback" name="feedback">
+        <button type="button" onclick="feedbackAnswer()">Submit Feedback</button>
+    </form>
+    </section>
+    
+    <section class="gift">
+        <h2>Claim Your Gift</h2>
+        <p id="giftMessage"></p>
+    </section>
+    
+    <section class="current-time">
+        <h2>Current Time</h2>
+        <p id="time"></p>
+    </section>
+</section>
+
+    <!-- footer -->
+    <footer
+            class="text-center text-lg-start text-dark"
+            style="background-color: #ECEFF1"
+            >
+      
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #535554"
+               >
+    
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+    
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+       
+      </section>
+      
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+        
+          <div class="row mt-3">
+           
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              
+              <h6 class="text-uppercase fw-bold">Ashes</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                Explore timeless elegance and elevate your style with our exquisite collection of fine jewelry. From intricately crafted pieces to contemporary designs, our jewelry reflects sophistication and refinement.
+              </p>
+            </div>
+        
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-dark">Men's Chain Collection</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Lockets and Pendant</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Silver and Gold Rings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Unisex Watches</a>
+              </p>
+            </div>
+            
+  
+           
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> University Street, Turkey</p>
+              <p><i class="fas fa-envelope mr-3"></i> stylewithashes@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 53 164 913 99</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+         
+          </div>
+         
+        </div>
+      </section>
+      
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"
+           >Ashes.com</a
+          >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
